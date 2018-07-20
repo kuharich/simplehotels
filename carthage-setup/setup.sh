@@ -1,4 +1,4 @@
-#!/bin/sh -eux
+cd ..#!/bin/sh -eux
 
 brew update
 brew install carthage

@@ -1,1 +1,2 @@
 github "Alamofire/Alamofire" ~> 4.4
+github "evgenyneu/Cosmos" ~> 16.0

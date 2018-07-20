@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Cosmos
 
 class DetailViewController: UIViewController {
 
@@ -14,6 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var rating: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var hotelImage: UIImageView!
+    @IBOutlet weak var cosmosView: CosmosView!
     
     var hotelDetails: Hotel?
     
@@ -30,12 +32,9 @@ class DetailViewController: UIViewController {
         navigationController?.isNavigationBarHidden = false
         if let hotel = hotelDetails {
             name.text = hotel.name
-            var stars = ""
-            let myIntHotelRating:Int = Int(hotel.rating)
-            for _ in 0..<myIntHotelRating {
-                stars.append("⭐️")
-            }
-            rating.text = "Rating: " + String(hotel.rating) + stars
+            rating.textAlignment = NSTextAlignment.right
+            rating.text = "Rating: " + String(hotel.rating) + " "
+            cosmosView.rating = Double(hotel.rating)
             price.text = "$" + hotel.price
             
             guard let url = URL(string: hotel.imageUrl) else { return }

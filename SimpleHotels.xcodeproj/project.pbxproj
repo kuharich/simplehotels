@@ -10,7 +10,6 @@
 		639BFEE616DE9E8800928714 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639BFEE516DE9E8800928714 /* UIKit.framework */; };
 		639BFEE816DE9E8800928714 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639BFEE716DE9E8800928714 /* Foundation.framework */; };
 		639BFEEA16DE9E8800928714 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639BFEE916DE9E8800928714 /* CoreGraphics.framework */; };
-		639BFEF016DE9E8900928714 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 639BFEEE16DE9E8900928714 /* InfoPlist.strings */; };
 		639BFEF816DE9E8900928714 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BFEF716DE9E8900928714 /* Default.png */; };
 		639BFEFA16DE9E8900928714 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BFEF916DE9E8900928714 /* Default@2x.png */; };
 		639BFEFC16DE9E8900928714 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BFEFB16DE9E8900928714 /* Default-568h@2x.png */; };
@@ -28,6 +27,9 @@
 		98E154731F9BD34200E367BF /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E154721F9BD34200E367BF /* Hotel.swift */; };
 		98E154751F9BE13E00E367BF /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E154741F9BE13E00E367BF /* main.storyboard */; };
 		98E154781F9BE38F00E367BF /* HotelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E154771F9BE38F00E367BF /* HotelsViewController.swift */; };
+		9F6CE3CB2102643C00E821AA /* Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6CE3CA2102643C00E821AA /* Cosmos.framework */; };
+		9F6CE3CC2102667400E821AA /* Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6CE3CA2102643C00E821AA /* Cosmos.framework */; };
+		9F6CE3CD2102667400E821AA /* Cosmos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6CE3CA2102643C00E821AA /* Cosmos.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B8CB7192181F3FFF00FD1B39 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8CB7191181F3FFF00FD1B39 /* Security.framework */; };
 		B8CB7194181F731B00FD1B39 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8CB7193181F731B00FD1B39 /* Images.xcassets */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9F6CE3CD2102667400E821AA /* Cosmos.framework in Embed Frameworks */,
 				8E5C914D1EF72B960043FC4C /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -81,6 +84,7 @@
 		98E154721F9BD34200E367BF /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		98E154741F9BE13E00E367BF /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		98E154771F9BE38F00E367BF /* HotelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsViewController.swift; sourceTree = "<group>"; };
+		9F6CE3CA2102643C00E821AA /* Cosmos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cosmos.framework; path = Carthage/Build/iOS/Cosmos.framework; sourceTree = "<group>"; };
 		B8CB7191181F3FFF00FD1B39 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B8CB7193181F731B00FD1B39 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6CE3CB2102643C00E821AA /* Cosmos.framework in Frameworks */,
 				B8CB7192181F3FFF00FD1B39 /* Security.framework in Frameworks */,
 				639BFF5B16DEA49100928714 /* MobileCoreServices.framework in Frameworks */,
 				639BFF5916DEA48C00928714 /* SystemConfiguration.framework in Frameworks */,
@@ -97,6 +102,7 @@
 				639BFEE616DE9E8800928714 /* UIKit.framework in Frameworks */,
 				639BFEE816DE9E8800928714 /* Foundation.framework in Frameworks */,
 				639BFEEA16DE9E8800928714 /* CoreGraphics.framework in Frameworks */,
+				9F6CE3CC2102667400E821AA /* Cosmos.framework in Frameworks */,
 				8E5C914C1EF72B960043FC4C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +139,7 @@
 		639BFEE416DE9E8800928714 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F6CE3CA2102643C00E821AA /* Cosmos.framework */,
 				8E5C914B1EF72B960043FC4C /* Alamofire.framework */,
 				639BFEE916DE9E8800928714 /* CoreGraphics.framework */,
 				639BFEE716DE9E8800928714 /* Foundation.framework */,
@@ -299,7 +306,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639BFEF016DE9E8900928714 /* InfoPlist.strings in Resources */,
 				98E154751F9BE13E00E367BF /* main.storyboard in Resources */,
 				B8CB7194181F731B00FD1B39 /* Images.xcassets in Resources */,
 				639BFEF816DE9E8900928714 /* Default.png in Resources */,
